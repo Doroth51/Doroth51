@@ -1,0 +1,292 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(252, 250, 248);
+}
+.title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: 60px 15px #e6ae9f;
+}
+h2{
+  padding-bottom: 10px;
+}
+
+
+/* Menu de navigation */
+
+.navbar{
+  z-index: 2;
+  background-color: #e6ae9f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: bold;
+  letter-spacing: 2px;
+}
+.navbar-nav{
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-link{
+  color: #fff !important;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.nav-link:hover, .nav-link.active{
+  background-color: #fff;
+  color: #e6ae9f !important;
+}
+  
+/* Presentation */
+#background {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+#screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 38%;
+  left: 37%;
+  width: 29vw;
+  height: 40vh;
+}
+#heure {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#hello {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+/* AboutMe */
+#aboutMe{
+  padding: 60px 30px;
+  background-color: #e6ae9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#photoIdentite{
+  width: 300px;
+  border-radius: 50%;
+  margin: 40px;
+}
+#whoIAm{
+  margin: auto 50px;
+}
+
+
+/* Compétences */
+#skills {
+  padding: 60px 30px;
+  text-align: center;
+}
+#detailsSkills {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+#progressBars {
+  width: 60%;
+}
+h3 {
+  font-size: 20px;
+  display: flex;
+  justify-items: center;
+}
+.skill {
+  background: linear-gradient(to right, #e6ae9f, #e65d37);
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.html {
+  width: 85%;
+}
+.css {
+  width: 85%;
+}
+.javascript {
+  width: 60%;
+}
+.php {
+  width: 50%;
+}
+.mysql {
+  width: 50%;
+}
+#warning {
+  padding: 20px;
+}
+#cv {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  background-color: transparent;
+}
+.button1 {
+  font-size: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #e6ae9f;
+  border: 1px solid #e65d37;
+  display: inline-block;
+  padding: 18px 25px 18px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in 0s; 
+}
+.button1:hover{
+  background-color: #e65d37;
+}
+
+/* Portfolio */
+#portfolio{
+  padding: 60px 30px;
+  text-align: center;
+}
+#mesProjets{
+  margin: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.projet{
+  position: relative;
+  margin: 30px;
+
+ 
+}
+.projet__photo{
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.projet #projet__description{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ddd;
+  color:#000;
+  font-size: bold;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s ease;  
+  height: 0
+}
+
+.projet:hover #projet__description{
+  height: 100%;
+}
+
+/* Contact */
+#contact{
+  background: linear-gradient(180deg, rgba(230,174,159,1) 0%, rgba(177,177,177,1) 100%);
+  padding: 60px 30px;
+  text-align: center;
+}
+.contact_section{
+  text-shadow: 60px 15px #fff;
+}
+.meContacter{
+  display: flex;
+}
+.formulaire{
+ margin: auto;
+  width: 500px;  
+  padding: 40px;
+}
+textarea{
+  width: 100%;
+}
+input, textarea{
+  width: 100%;
+  border-radius: 2%;
+  margin-bottom: 5px;
+}
+#envoyer{
+  width: 30%;
+  margin-top: 10px;
+  align-self: center;
+  color: #fff;
+  background-color: #EA7A5B;
+  padding: 5px;
+  border-radius: 5px;
+}
+#envoyer:hover{
+  background-color: #663528;
+}
+.autresContacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  
+}
+.autresContacts p{
+  font-size: 0.8rem;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+/* .mail{
+  align-self: baseline;
+} */
+.logo{
+  width: 30px;
+}
+
+
+@media screen and (max-width: 974px){
+  #screen{
+    top: 29%;    
+  }
+  #heure{
+    font-size: 1.2rem;
+  }
+  #hello{
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #screen{
+    top: 21%;    
+  }
+  #heure{
+    font-size: 0.8rem;
+  }
+  #hello{
+    font-size: 0.8rem;
+  }
+  
+}
