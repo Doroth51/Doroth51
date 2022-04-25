@@ -276,6 +276,23 @@ input, textarea{
   #hello{
     font-size: 0.9rem;
   }
+  #aboutMe{
+    flex-direction: column;
+  }
+  #detailsSkills{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #envoyer{
+    width: 80px;
+  }
+  #progressBars, #cv{
+    width: 90%;
+  }
+  #cv{
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 600px){
